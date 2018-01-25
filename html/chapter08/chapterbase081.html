@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/tools.css">
+    <link rel="stylesheet" href="./../../css/global.css">
+</head>
+<body>
+<div class="tableShow">
+    <div class="contentTitle">
+        排污许可执行报表 > 信息公开情况
+    </div>
+    <div class="main-wrap">
+        <div class="main-dt">
+            信息公开情况报表
+        </div>
+        <div class="main-dd">
+            <table class="table-wrap">
+                <tbody>
+                <tr>
+                    <th colspan="2">序号</th>
+                    <th width="200">公开方式</th>
+                    <th width="200">时间节点</th>
+                    <th>公开内容</th>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr>
+                    <th rowspan="3" width="30">1</th>
+                    <th width="150">许可证规定内容</th>
+                    <td class="text-left">1.国家排污许可信息公开系统 2.其他便于公众知晓的方式</td>
+                    <td class="text-left">及时公开，及时更新</td>
+                    <td class="text-left">1.基础信息，包括单位名称、组织机构代码、法定代表人、生产地址、联系方式，以及生产经营和管理服务的主要内容、产品及规模； 2.排污信息，包括主要污染物及特征污染物的名称、排放方式、排放口数量和分布情况、排放浓度和总量、超标情况，以及执行的污染物排放标准、核定的排放总量； 3.防治污染设施的建设和运行情况； 4.建设项目环境影响评价及其他环境保护行政许可情况； 5.突发环境事件应急预案； 6.季度、半年及年度排污许可证执行报告中相关内容； 7.其他应当公开的环境信息。</td>
+                </tr>
+                <tr>
+                    <th>实际执行情况</th>
+                    <td>
+                        <div class="ivu-input-wrapper ivu-input-type">
+                            <!--<textarea placeholder="" rows="2" class="ivu-input"></textarea>-->
+                            <i class="ivu-icon ivu-icon-load-c ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                            <span></span>
+                        </div></td>
+                    <td>
+                        <div class="ivu-input-wrapper ivu-input-type">
+                            <!--<textarea placeholder="" rows="2" class="ivu-input"></textarea>-->
+                            <i class="ivu-icon ivu-icon-load-c ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                            <span></span>
+                        </div></td>
+                    <td>
+                        <div class="ivu-input-wrapper ivu-input-type">
+                            <!--<textarea placeholder="" rows="2" class="ivu-input"></textarea>-->
+                            <i class="ivu-icon ivu-icon-load-c ivu-load-loop ivu-input-icon ivu-input-icon-validate"></i>
+                            <span></span>
+                        </div></td>
+                </tr>
+                <tr>
+                    <th>是否符合许可证要求</th>
+                    <td>
+                        <div class="ivu-radio-group" defaultvalue="Y">
+                            <label class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked"><span class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input" name="s1" checked/></span>是</label>
+                            <label class="ivu-radio-wrapper ivu-radio-group-item"><span class="ivu-radio"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input" name="s1"/></span>否</label>
+                        </div></td>
+                    <td>
+                        <div class="ivu-radio-group" defaultvalue="Y">
+                            <label class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked"><span class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input" name="s2" checked/></span>是</label>
+                            <label class="ivu-radio-wrapper ivu-radio-group-item"><span class="ivu-radio"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input" name="s2"/></span>否</label>
+                        </div></td>
+                    <td>
+                        <div class="ivu-radio-group" defaultvalue="Y">
+                            <label class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked"><span class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input" name="s3" checked/></span>是</label>
+                            <label class="ivu-radio-wrapper ivu-radio-group-item"><span class="ivu-radio"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input" name="s3"/></span>否</label>
+                        </div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div class="button bottom-button">
+        <button type="button" class="ivu-btn ivu-btn-ghost"> <span>上一步</span></button>
+        <button type="button" class="ivu-btn ivu-btn-ghost" id="preserve"><span>保存</span></button>
+        <button type="button" class="ivu-btn ivu-btn-primary"> <span>下一步</span></button>
+    </div>
+</div>
+<div id="divbox"><img src="../../img/save.png" class="save" style="display: none;"></div>
+</body>
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none"; 
+}
+setTimeout("codefans()",3000);
+</script>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</html>

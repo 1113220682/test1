@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/tools.css">
+    <link rel="stylesheet" href="./../../css/global.css">
+</head>
+<body>
+<div id="faqbg">
+    
+</div>
+<div class="tableShow">
+    <div class="contentTitle">
+        排污许可执行报表 > 污染防治设施运行情况 > 污染治理设施正常运转信息
+    </div>
+    <div class="main-wrap">
+
+        <div class="main-dt">
+            废气污染治理设施正常情况汇总表
+            <button type="button" class="ivu-btn ivu-btn-primary add"> <span>+&nbsp;&nbsp;新增</span></button>
+        </div>
+
+        <div class="main-dd">
+            <p class="notes">注：污染治理设施运行费用主要为脱硫/脱硝剂等物料及水、电等的消耗费用，不包括人工、绿化、设备折旧和财务费用等。实际除尘/脱硫/脱硝效率为报告期内算数平均值。综合除尘效率主要指，一级除尘系统（布袋除尘或电除尘）、脱硫系统、二级除尘系统（湿式电除尘）等对烟尘的综合去除效率。</p>
+            <div class="table-list-wrap">
+                <table class="table-list" style="width: 1580px;">
+                    <tbody>
+                    <tr>
+                        <th rowspan="3" width="100">生产设施名称</th>
+                        <th rowspan="3">生产设施编号</th>
+                        <th rowspan="3">污染治理设施名称</th>
+                        <th rowspan="3" width="80">污染治理设施编号</th>
+                        <th rowspan="2">治理设施运行时间</th>
+                        <th colspan="4">除尘设施</th>
+                        <th colspan="4">脱硫设施</th>
+                        <th colspan="2">综合除尘效率</th>
+                        <th colspan="3">脱硝设施</th>
+                        <th rowspan="2">污染治理设施运行费用</th>
+                        <th rowspan="3">操作</th>
+                    </tr>
+                    <tr>
+                        <td>粉煤灰产生量</td>
+                        <td>布袋除尘器清灰周期及换袋情况</td>
+                        <td colspan="2">除尘效率</td>
+                        <td>脱硫剂用量</td>
+                        <td>脱硫副产物产生量</td>
+                        <td colspan="2">脱硫效率</td>
+                        <td rowspan="2">设计值%</td>
+                        <td rowspan="2">实际值%</td>
+                        <td>脱硝还原剂用量</td>
+                        <td colspan="2">脱硝效率</td>
+                    </tr>
+                    <tr>
+                        <td>小时</td>
+                        <td>吨</td>
+                        <td>/</td>
+                        <td>设计值%</td>
+                        <td>实际值% </td>
+                        <td>吨</td>
+                        <td>吨</td>
+                        <td>设计值%</td>
+                        <td>实际值% </td>
+                        <td>吨</td>
+                        <td>设计值%</td>
+                        <td>实际值% </td>
+                        <td>万元</td>
+                    </tr>
+                    <tr>
+                        <td>MF0034</td>
+                        <td>翻车机房</td>
+                        <td>无组织排放控制措施</td>
+                        <td>/</td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><button type="button" class="ivu-btn ivu-btn-error ivu-btn-small">
+                            <i class="ivu-icon ivu-icon-trash-a"></i> <span>删除</span></button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="main-dt">
+            废水污染治理设施正常情况汇总表
+             <button type="button" class="ivu-btn ivu-btn-primary add  a-n"> <span>+&nbsp;&nbsp;新增</span></button>
+        </div>
+        <div class="main-dd">
+            <p class="notes">注：污泥处置方式包括委托处置、填埋处置、建筑材料利用、焚烧处置等。污染治理设施运行费用主要为药剂、耗电等材料的消耗费用，不包括人工、绿化、设备折旧和财务费用等。</p>
+            <div class="table-list-wrap">
+                <table class="table-list" style="width: 1800px;">
+                    <tbody>
+                    <tr>
+                        <th rowspan="2" width="100">废水类别</th>
+                        <th rowspan="2">污染治理设施名称</th>
+                        <th rowspan="2">污染治理设施编号</th>
+                        <th rowspan="2">污染治理设施工艺</th>
+                        <th rowspan="2">污染因子</th>
+                        <th rowspan="2">治理设施运行时间（天）</th>
+                        <th rowspan="2">排放去向</th>
+                        <th rowspan="2">受纳水体名称</th>
+                        <th rowspan="2">用电量（万千瓦时）</th>
+                        <th colspan="4">生活污水</th>
+                        <th colspan="6">生产废水</th>
+                        <th rowspan="2">循环冷却水排放量（t）</th>
+                        <th rowspan="2">直流冷却水排水量（t）</th>
+                        <th rowspan="2">污泥处置方式</th>
+                        <th rowspan="2" width="100">污染治理设施运行费用（万元）</th>
+                        <th rowspan="2">操作</th>
+                    </tr>
+                    <tr>
+                        <td>设计处理能力（t/a）</td>
+                        <td>实际处理量（t）</td>
+                        <td>实际回用量（t）</td>
+                        <td>实际排放量（t）</td>
+                        <td>设计处理能力（t/a）</td>
+                        <td>实际处理量（t）</td>
+                        <td>实际回用量（t）</td>
+                        <td>实际排放量（t）</td>
+                        <td>污泥产生量（t）</td>
+                        <td>污泥含水率%</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>脱硫废水处理系统</td>
+                        <td>TW001</td>
+                        <td>絮凝或混凝沉淀</td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td>
+                           <!-- <div class="ivu-select ivu-select-single" style="width: 120px;">
+                                <div class="ivu-select-selection">
+                                    <span class="ivu-select-placeholder">请选择</span>
+                                    <span class="ivu-select-selected-value" style="display: none;"></span>
+
+                                    <i class="ivu-icon ivu-icon-ios-close ivu-select-arrow" style="display: none;"></i>
+                                    <i class="ivu-icon ivu-icon-arrow-down-b ivu-select-arrow"></i>
+                                </div>
+                                <div class="ivu-select-dropdown" style="display: none;">
+                                    <ul class="ivu-select-not-found" style="display: none;">
+                                        <li>无匹配数据</li>
+                                    </ul>
+                                    <ul class="ivu-select-dropdown-list">
+                                        <li class="ivu-select-item">委托处置</li>
+                                        <li class="ivu-select-item">填埋处置</li>
+                                        <li class="ivu-select-item">建筑材料利用</li>
+                                        <li class="ivu-select-item">焚烧处置</li>
+                                        <li class="ivu-select-item">其他</li>
+                                    </ul>
+                                </div>
+                            </div>--><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><button type="button" class="ivu-btn ivu-btn-error ivu-btn-small">
+                            <i class="ivu-icon ivu-icon-trash-a"></i> <span>删除</span></button></td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>含煤废水处理系统</td>
+                        <td>TW002</td>
+                        <td>絮凝或混凝沉淀</td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td>
+                            <!--<div class="ivu-select ivu-select-single" style="width: 120px;">
+                                <div class="ivu-select-selection">
+                                    <span class="ivu-select-placeholder">请选择</span>
+                                    <span class="ivu-select-selected-value" style="display: none;"></span>
+
+                                    <i class="ivu-icon ivu-icon-ios-close ivu-select-arrow" style="display: none;"></i>
+                                    <i class="ivu-icon ivu-icon-arrow-down-b ivu-select-arrow"></i>
+                                </div>
+                                <div class="ivu-select-dropdown" style="display: none;">
+                                    <ul class="ivu-select-not-found" style="display: none;">
+                                        <li>无匹配数据</li>
+                                    </ul>
+                                    <ul class="ivu-select-dropdown-list">
+                                        <li class="ivu-select-item">委托处置</li>
+                                        <li class="ivu-select-item">填埋处置</li>
+                                        <li class="ivu-select-item">建筑材料利用</li>
+                                        <li class="ivu-select-item">焚烧处置</li>
+                                        <li class="ivu-select-item">其他</li>
+                                    </ul>
+                                </div>
+                            </div>--><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><button type="button" class="ivu-btn ivu-btn-error ivu-btn-small">
+                            <i class="ivu-icon ivu-icon-trash-a"></i> <span>删除</span></button></td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>生活污水处理系统</td>
+                        <td>TW003</td>
+                        <td>生物接触氧化</td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td>
+                            <!--<div class="ivu-select ivu-select-single" style="width: 120px;">
+                                <div class="ivu-select-selection">
+                                    <span class="ivu-select-placeholder">请选择</span>
+                                    <span class="ivu-select-selected-value" style="display: none;"></span>
+
+                                    <i class="ivu-icon ivu-icon-ios-close ivu-select-arrow" style="display: none;"></i>
+                                    <i class="ivu-icon ivu-icon-arrow-down-b ivu-select-arrow"></i>
+                                </div>
+                                <div class="ivu-select-dropdown" style="display: none;">
+                                    <ul class="ivu-select-not-found" style="display: none;">
+                                        <li>无匹配数据</li>
+                                    </ul>
+                                    <ul class="ivu-select-dropdown-list">
+                                        <li class="ivu-select-item">委托处置</li>
+                                        <li class="ivu-select-item">填埋处置</li>
+                                        <li class="ivu-select-item">建筑材料利用</li>
+                                        <li class="ivu-select-item">焚烧处置</li>
+                                        <li class="ivu-select-item">其他</li>
+                                    </ul>
+                                </div>
+                            </div>--><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><button type="button" class="ivu-btn ivu-btn-error ivu-btn-small">
+                            <i class="ivu-icon ivu-icon-trash-a"></i> <span>删除</span></button></td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>工业废水处理系统</td>
+                        <td>TW004</td>
+                        <td>絮凝或混凝沉淀</td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td>
+                            <!--<div class="ivu-select ivu-select-single" style="width: 120px;">
+                                <div class="ivu-select-selection">
+                                    <span class="ivu-select-placeholder">请选择</span>
+                                    <span class="ivu-select-selected-value" style="display: none;"></span>
+
+                                    <i class="ivu-icon ivu-icon-ios-close ivu-select-arrow" style="display: none;"></i>
+                                    <i class="ivu-icon ivu-icon-arrow-down-b ivu-select-arrow"></i>
+                                </div>
+                                <div class="ivu-select-dropdown" style="display: none;">
+                                    <ul class="ivu-select-not-found" style="display: none;">
+                                        <li>无匹配数据</li>
+                                    </ul>
+                                    <ul class="ivu-select-dropdown-list">
+                                        <li class="ivu-select-item">委托处置</li>
+                                        <li class="ivu-select-item">填埋处置</li>
+                                        <li class="ivu-select-item">建筑材料利用</li>
+                                        <li class="ivu-select-item">焚烧处置</li>
+                                        <li class="ivu-select-item">其他</li>
+                                    </ul>
+                                </div>
+                            </div>--><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+                        <td><button type="button" class="ivu-btn ivu-btn-error ivu-btn-small">
+                            <i class="ivu-icon ivu-icon-trash-a"></i> <span>删除</span></button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="button bottom-button">
+        <button type="button" class="ivu-btn ivu-btn-ghost"> <span>上一步</span></button>
+        <button type="button" class="ivu-btn ivu-btn-ghost" id="preserve"><span>保存</span></button>
+        <button type="button" class="ivu-btn ivu-btn-primary"> <span>下一步</span></button>
+    </div>
+</div>
+<div id="divbox"><img src="../../img/save.png" class="save" style="display: none;"></div>
+
+<div id="faqdiv1" style="display:none">
+    <div >
+        <p class="wire new ">
+            <b>新增污染治理设施</b>
+            <span class="close">×</span>
+        </p>
+    </div>
+    <div class="year wire over">
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px; ">生产设施名称及编号</label>
+            <select class="choose" onmousedown="if(this.options.length>6){this.size=7}" onblur="this.size=0" onchange="this.size=0">
+                <option style="display: none;">请选择</option>
+                <option>MF0038 - 灰库</option>
+                <option>MF0024 - 送风机</option>
+                <option>MF0009 - 送风机</option>
+                <option>MF0050 - 输送皮带</option>
+                <option>MF0019 - 磨煤机</option>
+                <option>MF0044 - 输送皮带</option>
+                <option>MF0058 - 翻车机房</option>
+                <option>MF0001 - 磨煤机</option>
+                <option>MF0054 - 输送皮带</option>
+                <option>MF0034 - 条形煤场</option>
+                <option>MF0043 - 石膏库房</option>
+                <option>MF0059 - 翻车机房</option>
+                <option>MF0030 - 凝汽式汽轮机</option>
+                <option>MF0055 - 输送皮带</option>
+                <option>MF0056 - 输送皮带</option>
+                <option>MF0046 - 输送皮带</option>
+                <option>MF0051 - 输送皮带</option>
+                <option>MF0017 - 磨煤机</option>
+                <option>MF0007 - 筒仓</option>
+                <option>MF0032 - 油罐</option>
+                <option>MF0012 - 一次风机</option>
+                <option>MF0041 - 液氨罐</option>
+                <option>MF0011 - 送风机</option>
+                <option>MF0052 - 输送皮带</option>
+                <option>MF0002 - 磨煤机</option>
+                <option>MF0033 - 条形煤场</option>
+                <option>MF0037 - 灰库</option>
+                <option>MF0006 - 筒仓</option>
+                <option>MF0005 - 筒仓</option>
+                <option>MF0021 - 筒仓</option>
+                <option>MF0049 - 输送皮带</option>
+                <option>MF0045 - 输送皮带</option>
+                <option>MF0060 - 斗轮堆取料机</option>
+                <option>MF0016 - 磨煤机</option>
+                <option>MF0014 - 凝汽式汽轮机</option>
+                <option>MF0029 - 煤粉锅炉</option>
+                <option>MF0022 - 筒仓</option>
+                <option>MF0026 - 送风机</option>
+                <option>MF0048 - 输送皮带</option>
+                <option>MF0040 - 液氨罐</option>
+                <option>MF0042 - 灰渣场</option>
+                <option>MF0031 - 油罐</option>
+                <option>MF0036 - 筒仓</option>
+                <option>MF0027 - 一次风机</option>
+                <option>MF0039 - 灰库</option>
+                <option>MF0025 - 一次风机</option>
+                <option>MF0004 - 磨煤机</option>
+                <option>MF0020 - 筒仓</option>
+                <option>MF0023 - 筒仓</option>
+                <option>MF0008 - 筒仓</option>
+                <option>MF0028 - 发电机</option>
+                <option>MF0057 - 输送皮带</option>
+                <option>MF0018 - 磨煤机</option>
+                <option>MF0013 - 煤粉锅炉</option>
+                <option>MF0015 - 发电机</option>
+                <option>MF0035 - 条形煤场</option>
+                <option>MF0010 - 一次风机</option>
+                <option>MF0053 - 输送皮带</option>
+            </select>
+        </div>
+        <!-- <div id="demo" class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生产设施名称及编号</label>
+            <div class="ivu-select-selection"> 
+                <span class="ivu-select-placeholder pleace " >请选择</span> 
+                <span class="ivu-select-selected-value" style="display: none;"></span> 
+                <img src="../../img/triangle.png" class="triangle">
+            </div>
+
+            <div class="ivu-select-dropdown" x-placement="bottom-start" style=" position: fixed; left: 454px; top: 183px; transform-origin:    center top: 0px;">
+                <ul class="ivu-select-not-found" style="display: none;">
+                    <li>无匹配数据</li>
+                </ul> 
+                <ul class="ivu-select-dropdown-list serial" style="display: none;">
+                    <li class="ivu-select-item" value="MF0047 - 输送皮带">MF0047 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0038 - 灰库</li>
+                    <li class="ivu-select-item">MF0024 - 送风机</li>
+                    <li class="ivu-select-item">MF0009 - 送风机</li>
+                    <li class="ivu-select-item">MF0050 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0019 - 磨煤机</li>
+                    <li class="ivu-select-item">MF0044 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0003 - 磨煤机</li>
+                    <li class="ivu-select-item">MF0058 - 翻车机房</li>
+                    <li class="ivu-select-item">MF0001 - 磨煤机</li>
+                    <li class="ivu-select-item">MF0054 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0034 - 条形煤场</li>
+                    <li class="ivu-select-item">MF0043 - 石膏库房</li>
+                    <li class="ivu-select-item">MF0059 - 翻车机房</li>
+                    <li class="ivu-select-item">MF0030 - 凝汽式汽轮机</li>
+                    <li class="ivu-select-item">MF0055 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0056 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0046 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0051 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0017 - 磨煤机</li>
+                    <li class="ivu-select-item">MF0007 - 筒仓</li>
+                    <li class="ivu-select-item">MF0032 - 油罐</li>
+                    <li class="ivu-select-item">MF0012 - 一次风机</li>
+                    <li class="ivu-select-item">MF0041 - 液氨罐</li>
+                    <li class="ivu-select-item">MF0011 - 送风机</li>
+                    <li class="ivu-select-item">MF0052 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0002 - 磨煤机</li>
+                    <li class="ivu-select-item">MF0033 - 条形煤场</li>
+                    <li class="ivu-select-item">MF0037 - 灰库</li>
+                    <li class="ivu-select-item">MF0006 - 筒仓</li>
+                    <li class="ivu-select-item">MF0005 - 筒仓</li>
+                    <li class="ivu-select-item">MF0021 - 筒仓</li>
+                    <li class="ivu-select-item">MF0049 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0045 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0060 - 斗轮堆取料机</li>
+                    <li class="ivu-select-item">MF0016 - 磨煤机</li>
+                    <li class="ivu-select-item">MF0014 - 凝汽式汽轮机</li>
+                    <li class="ivu-select-item">MF0029 - 煤粉锅炉</li>
+                    <li class="ivu-select-item">MF0022 - 筒仓</li>
+                    <li class="ivu-select-item">MF0026 - 送风机</li>
+                    <li class="ivu-select-item">MF0048 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0040 - 液氨罐</li>
+                    <li class="ivu-select-item">MF0042 - 灰渣场</li>
+                    <li class="ivu-select-item">MF0031 - 油罐</li>
+                    <li class="ivu-select-item">MF0036 - 筒仓</li>
+                    <li class="ivu-select-item">MF0027 - 一次风机</li>
+                    <li class="ivu-select-item">MF0039 - 灰库</li>
+                    <li class="ivu-select-item">MF0025 - 一次风机</li>
+                    <li class="ivu-select-item">MF0004 - 磨煤机</li>
+                    <li class="ivu-select-item">MF0020 - 筒仓</li>
+                    <li class="ivu-select-item">MF0023 - 筒仓</li>
+                    <li class="ivu-select-item">MF0008 - 筒仓</li>
+                    <li class="ivu-select-item">MF0028 - 发电机</li>
+                    <li class="ivu-select-item">MF0057 - 输送皮带</li>
+                    <li class="ivu-select-item">MF0018 - 磨煤机</li>
+                    <li class="ivu-select-item">MF0013 - 煤粉锅炉</li>
+                    <li class="ivu-select-item">MF0015 - 发电机</li>
+                    <li class="ivu-select-item">MF0035 - 条形煤场</li>
+                    <li class="ivu-select-item">MF0010 - 一次风机</li>
+                    <li class="ivu-select-item">MF0053 - 输送皮带</li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">污染治理设施名称</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">污染治理设施编号</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">治理设施运行时间(小时)</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">除尘设施-粉煤灰产生量(吨)</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">除尘设施-布袋除尘器清灰周期及换袋情况</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">除尘设施-除尘效率-设计值%</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">除尘设施-除尘效率-实际值%</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">脱硫设施-脱硫剂用量(吨)</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">脱硫设施-脱硫副产物产生量(吨)</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">脱硫设施-脱硫效率-设计值%</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">脱硫设施-脱硫效率-实际值%</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">综合除尘效率设计值%</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">综合除尘效率实际值%</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">脱硝设施-脱硝还原剂用量(吨)</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">脱硝设施-脱硝效率-设计值%</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">脱硝设施-脱硝效率-实际值%</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">污染治理设施运行费用(万元)</label>
+            <input class="import1"></input>
+        </div>
+    </div>
+    <div style=" float: right; margin-right: 15px;position: absolute;top: 258px; right: 5px; height: 60px;">
+        <button class="btn-blue">确定添加</button>
+    </div>
+</div>
+
+<div id="faqdiv2" style="display:none">
+    <div >
+        <p class="wire new ">
+            <b>新增污染治理设施</b>
+            <span class="close">×</span>
+        </p>
+    </div>
+    <div class="year wire over">
+        <div id="demo" class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">废水类别</label>
+            <div class="ivu-select-selection"> 
+                <span class="ivu-select-placeholder pleace " >请选择</span> 
+                <span class="ivu-select-selected-value" style="display: none;"></span> 
+                <img src="../../img/triangle.png" class="triangle">
+            </div>
+    
+            <div class="ivu-select-dropdown" x-placement="bottom-start" style=" position: fixed; left: 454px; top: 183px; transform-origin:  center top: 0px;">
+                <ul class="ivu-select-not-found" style="display: none;">
+                    <li>无匹配数据</li>
+                </ul> 
+                <ul class="ivu-select-dropdown-list serial" style="display: none;">
+                    <li class="ivu-select-item" value="MF0047 - 输送皮带">DW001 - undefined</li>
+                    <li class="ivu-select-item">DW002 - undefined</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">污染治理设施名称</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">污染治理设施编号</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">污染治理设施工艺</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">污染因子</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">治理设施运行时间（天）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">用电量（万千瓦时)</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生活污水-设计处理能力（t/a）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生活污水-实际处理量（t）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生活污水-实际回用量（t）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生活污水-实际排放量（t）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生产废水-设计处理能力（t/a）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生产废水-实际处理量（t）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生产废水-实际回用量（t）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生产废水-实际排放量（t）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生产废水-污泥产生量（t）</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">生产废水-污泥含水率%</label>
+            <input class="import1"></input>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">循环冷却水排放量（t）</label>
+            <input class="import1"></input>
+        </div>
+        <div id="demo" class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">污泥处置方式</label>
+            <div class="ivu-select-selection"> 
+                <span class="ivu-select-placeholder pleace " >请选择</span> 
+                <span class="ivu-select-selected-value" style="display: none;"></span> 
+                <img src="../../img/triangle.png" class="triangle">
+            </div>
+    
+            <div class="ivu-select-dropdown" x-placement="bottom-start" style=" position: fixed; left: 454px; top: 183px; transform-origin:  center top: 0px;">
+                <ul class="ivu-select-not-found" style="display: none;">
+                    <li>无匹配数据</li>
+                </ul> 
+                <ul class="ivu-select-dropdown-list serial" style="display: none;">
+                    <li class="ivu-select-item" value="MF0047 - 输送皮带">委托处理</li>
+                    <li class="ivu-select-item">填埋处理</li>
+                    <li class="ivu-select-item">建筑材料利用</li>
+                    <li class="ivu-select-item">焚烧处置</li>
+                    <li class="ivu-select-item">其他</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fll">
+            <label class="ivu-form-item-label" style="width: 135px;">污染治理设施运行费用（万元）</label>
+            <input class="import1"></input>
+        </div>
+        
+
+    </div>
+    <div style=" float: right; margin-right: 15px;position: absolute;top: 258px; right: 5px; height: 60px;">
+        <button class="btn-blue">确定添加</button>
+    </div>
+</div>
+
+</body>
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none"; 
+}
+setTimeout("codefans()",3000);
+</script>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</html>

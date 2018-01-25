@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/tools.css">
+    <link rel="stylesheet" href="./../../css/global.css">
+</head>
+<body>
+<div class="tableShow">
+    <div class="contentTitle">
+        排污许可执行报表 > 企业内部环境管理体系建设与运行情况
+    </div>
+    <div class="main-wrap">
+        <div class="main-dd">
+            <div class="mg text-green">
+                说明企业内部环境管理体系的设置、人员保障、设施配备、企业环境保护规划、相关规章制度的建设和实施情况、相关责任的落实情况等。
+            </div>
+            <div class="ivu-input-wrapper ivu-input-type">
+                <textarea placeholder="请输入..." rows="10" class="normal-textarea"></textarea>
+            </div>
+        </div>
+
+    </div>
+        <div class="button bottom-button">
+        <button type="button" class="ivu-btn ivu-btn-ghost"> <span>上一步</span></button>
+        <button type="button" class="ivu-btn ivu-btn-ghost" id="preserve"><span>保存</span></button>
+        <button type="button" class="ivu-btn ivu-btn-primary"> <span>下一步</span></button>
+    </div>
+</div>
+<div id="divbox"><img src="../../img/save.png" class="save" style="display: none;"></div>
+</body>
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none"; 
+}
+setTimeout("codefans()",3000);
+</script>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</html>

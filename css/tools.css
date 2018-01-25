@@ -1,0 +1,81 @@
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+    position: absolute;
+    right: 190px;
+}
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.bottom-button{
+    padding:20px 0;
+    text-align: center;
+}
+.ivu-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.5;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 6px 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: color .1s linear,background-color .1s linear,border .1s linear;
+    color: #657180;
+    background-color: #f7f7f7;
+    border-color: #d7dde4;
+}
+.ivu-btn-primary {
+    color: #fff;
+    background-color: #066cac;
+    border-color: #066cac;
+}
+.ivu-btn-ghost {
+    color: #657180;
+    background-color: transparent;
+    border-color: #d7dde4;
+}
+
+.ivu-input {
+    border-radius: 4px;
+    border: 1px solid #D7DDE4;
+    height: 28px;
+    line-height: 28px;
+    width: 80%;
+     
+}
+
+.ivu-input-wrapper {
+    display: inline-block;
+    /*width: 100%;*/
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.color {
+    background: #f6f6fb 100%;
+}
+
+.condition {
+    float: left;
+    position: relative;
+    left: 30%;
+}

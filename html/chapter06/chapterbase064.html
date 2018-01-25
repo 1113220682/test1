@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/tools.css">
+    <link rel="stylesheet" href="./../../css/global.css">
+</head>
+<body>
+<div id="faqbg">
+    
+</div>
+<div class="tableShow">
+    <div class="contentTitle">
+        排污许可执行报表 >  附件列表
+    </div>
+    <div class="main-wrap">
+        <div class="main-dd lr-head">
+            <button type="button" class="inline-right ivu-btn ivu-btn-primary add pt">
+                 <span>上传附件</span>
+            </button>
+        </div>
+        <div class="main-dd">
+            <table class="table-list">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>文件名称</th>
+                    <th>说明</th>
+                    <th width="100">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><span style="color: darkseagreen; cursor: pointer;">测试文件word.docx</span></td>
+                    <td></td>
+                    <td><button type="button" class="ivu-btn ivu-btn-small">
+                        <!----> <i class="ivu-icon ivu-icon-trash-a"></i> <span>删除</span></button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><span style="color: darkseagreen; cursor: pointer;">测试文件PDF.pdf</span></td>
+                    <td></td>
+                    <td><button type="button" class="ivu-btn ivu-btn-small">
+                        <!----> <i class="ivu-icon ivu-icon-trash-a"></i> <span>删除</span></button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="color: darkseagreen; cursor: pointer;">测试文件word.docx</span></td>
+                    <td></td>
+                    <td><button type="button" class="ivu-btn ivu-btn-small">
+                        <!----> <i class="ivu-icon ivu-icon-trash-a"></i> <span>删除</span></button></td>
+                </tr>
+                <!---->
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div class="button bottom-button">
+        <button type="button" class="ivu-btn ivu-btn-ghost"> <span>上一步</span></button>
+        <button type="button" class="ivu-btn ivu-btn-ghost" id="preserve"><span>保存</span></button>
+        <button type="button" class="ivu-btn ivu-btn-primary"> <span>下一步</span></button>
+    </div>
+</div>
+<div id="divbox"><img src="../../img/save.png" class="save" style="display: none;"></div>
+
+<div id="faqdiv4" style="display:none">
+    <div >
+        <p class="wire new ">
+            <b>新增异常情况</b>
+            <span class="close">×</span>
+        </p>
+    </div>
+    <div class="hei wire over">
+        <div class="fll">
+            <img src="../../img/up.png">
+        </div>
+        <div class="fll">
+            <!-- <label class="ivu-form-item-label" style="width: 135px;">故障设施</label> -->
+            <span>附件说明</span>
+            <input class="import1"></input>
+        </div>
+       
+    </div>
+    <div style=" float: right; margin-right: 15px;position: absolute;top: 208px; right: 5px; height: 60px;">
+        <button class="btn-blue">确定添加</button>
+    </div>
+</div>
+</body>
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none"; 
+}
+setTimeout("codefans()",3000);
+</script>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</html>

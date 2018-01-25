@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/tools.css">
+    <link rel="stylesheet" href="./../../css/global.css">
+    <link rel="stylesheet" href="./../../css/calendar.css">
+</head>
+<body>
+<div id="faqbg">
+    
+</div>
+<div class="tableShow">
+    <div class="contentTitle">
+        排污许可执行报表 > 遵守法律法规情况说明
+    </div>
+    <h4>遵守法律法规情况说明</h4>
+    <div class="main-dd">
+        <ul>
+            <li>1. 说明企业在许可证执行过程中遵守法律法规情况</li>
+            <li class="mg mgl">
+                <div>
+                    企业在许可证执行过程中是否遵守法律法规：
+                </div>
+                <!-- <input type="radio" id="female" name="sex" checked="" />
+                <label for="female">是</label>
+                <input type="radio" id="male" name="sex" />
+                <label for="male">否</label> -->
+                <div class="ivu-radio-group" defaultvalue="Y">
+                    <label class="ivu-radio-wrapper ivu-radio-group-item"><span class="ivu-radio"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input yes1" name="s1" checked /></span><label>是</label></label>
+                    <label class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked"><span class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input no1" name="s1"/></span><label>否</label></label>
+                </div>
+                <div class="mg hide1" style="display: none;">
+                    <div class=" ivu-input-type dt">
+                        <textarea placeholder="请输入..."  class="normal-textarea"></textarea>
+                    </div>
+                </div>
+            </li>
+            <li class="mg">
+                <div>
+                    2. 自觉遵守环境行政命令和环境行政决定情况：
+                </div>
+                <div class="mg mgl">
+                    <div class="ivu-input-wrapper ivu-input-type">
+                        <div class="border1">示例：报告期内如果政府部门开展环境治理专项行动，如G20、“两会”、重特大活动等情况，则需说明本企业执行情况。</div>
+                    </div>
+                </div>
+            </li>
+            <li class="mg">
+                <div>
+                    3. 公众举报、投诉情况及具体环境行政处罚等行政决定执行情况：
+                </div>
+                <div class="mgl">
+                    <div class="ivu-radio-group" defaultvalue="Y">
+                        <label class="ivu-radio-wrapper ivu-radio-group-item ivu-radio-wrapper-checked"><span class="ivu-radio ivu-radio-checked"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input yes2" name="s2" checked/></span>是</label>
+                        <label class="ivu-radio-wrapper ivu-radio-group-item"><span class="ivu-radio"><span class="ivu-radio-inner"></span> <input type="radio" class="ivu-radio-input no2" name="s2"/></span>否</label>
+                    </div>
+                </div>
+            </li>
+            <div class="hide2">
+                <li>
+                    <div class="showOtherTable ">
+                        <p>公众举报、投诉及、处理及行政处罚等情况表</p>
+                    </div>
+                </li>
+                <button type="button" class="ivu-btn ivu-btn-primary but"> <span>+&nbsp;&nbsp;新增</span></button>
+                <table class="table-list list1">
+                    <tbody>
+                    <tr>
+                        <th>序号</th>
+                        <th>时间</th>
+                        <th>事项</th>
+                        <th>说明</th>
+                        <th width="100">操作</th>
+                    </tr>
+                    <tr>
+                        <td class="list-empty" colspan="5"> 暂无数据 </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </ul>
+    </div>
+    <div class="button bottom-button">
+        <!-- <button type="button" class="ivu-btn ivu-btn-ghost"> <span>查看许可要求</span></button> -->
+        <button type="button" class="ivu-btn ivu-btn-ghost" id="preserve"><span>保存</span></button>
+        <button type="button" class="ivu-btn ivu-btn-primary"> <span>下一步</span></button>
+    </div>
+</div>
+<div id="divbox"><img src="../../img/save.png" class="save" style="display: none;"></div>
+
+<div id="faqdiv" style="display:none">
+    <div >
+        <p class="wire new">
+            <b>新增举报</b>
+            <span class="close">×</span>
+        </p>
+    </div>
+    <div class="year wire">
+        <div id="demo" class="fll">
+            <span class="red">*</span><span> 时间&nbsp;&nbsp;&nbsp;</span><input class="option" type="text" id="dt" placeholder="选择日期">
+            <div id="dd"></div>
+        </div>
+        <div class="fll">
+            <span class="red">*</span><span> 事项&nbsp;&nbsp;&nbsp;</span><input class="import"></input>
+        </div>
+        <div class="fll">
+            <span class="red">*</span><span> 说明&nbsp;&nbsp;&nbsp;</span><input class="import"></input>
+        </div>
+    </div>
+    <div style=" float: right; margin-right: 15px;position: absolute;top: 258px; right: 5px; height: 60px;">
+        <button class="btn-blue">确定添加</button>
+    </div>
+</div>
+
+
+</body>
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none"; 
+}
+setTimeout("codefans()",3000);
+</script>
+<script src="../../js/jquery.js"></script> 
+<script src="../../js/calendar.js"></script>
+<script>
+    $('#dd').calendar({
+        trigger: '#dt',
+        zIndex: 999,
+        format: 'yyyy-mm-dd',
+        onSelected: function (view, date, data) {
+            console.log('event: onSelected')
+        },
+        onClose: function (view, date, data) {
+            console.log('event: onClose')
+            console.log('view:' + view)
+            console.log('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+</script>
+</body>
+ 
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/tools.css">
+    <link rel="stylesheet" href="./../../css/global.css">
+</head>
+<body>
+<div class="tableShow">
+    <div class="contentTitle">
+        排污许可执行报表 > 排污费（环境保护税）缴纳情况
+    </div>
+    <div class="main-wrap">
+        <div class="main-dd">
+            <div class="ivu-input-wrapper ivu-input-type">
+                <textarea placeholder="请输入..." rows="15" class="normal-textarea"></textarea>
+            </div>
+        </div>
+    </div>
+        <div class="button bottom-button">
+        <button type="button" class="ivu-btn ivu-btn-ghost"> <span>上一步</span></button>
+        <button type="button" class="ivu-btn ivu-btn-ghost" id="preserve"><span>保存</span></button>
+        <button type="button" class="ivu-btn ivu-btn-primary"> <span>下一步</span></button>
+    </div>
+</div>
+<div id="divbox"><img src="../../img/save.png" class="save" style="display: none;"></div>
+</body>
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none"; 
+}
+setTimeout("codefans()",3000);
+</script>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</html>

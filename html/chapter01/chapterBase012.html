@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/tools.css">
+    <link rel="stylesheet" href="./../../css/global.css">
+</head>
+<body>
+<div class="tableShow">
+    <div class="contentTitle">
+        排污许可执行报表 > 遵守法律法规情况说明
+    </div>
+    <h4>注 1：根据燃料品种分别填写对应内容；表中数据为报告时段内全厂各批次收到基燃料的加权平均值；</h4>
+    <h4>注 2：以入厂煤衡量。</h4>
+    <table class="table-list">
+        <tbody>
+        <tr>
+            <th>序号</th>
+            <th>类型</th>
+            <th>子项</th>
+            <th>单位</th>
+            <th>值</th>
+        </tr>
+        <tr>
+            <th rowspan="4">1</th>
+            <th rowspan="4">燃煤机组</th>
+            <td>低位发热量</td>
+            <td>MJ/Kg</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."> </td>
+        </tr>
+        <tr>
+            <td>硫分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>干燥无灰基挥发分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>灰分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <th rowspan="2">2</th>
+            <th rowspan="2">燃油机组</th>
+            <td>低位发热量</td>
+            <td>MJ/Kg</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>硫分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <th rowspan="2">3</th>
+            <th rowspan="2">燃气机组</th>
+            <td>低位发热量</td>
+            <td>MJ/m3</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>硫化氢</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <th rowspan="4">4</th>
+            <th rowspan="4">煤矸石机组</th>
+            <td>低位发热量</td>
+            <td>MJ/Kg</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>硫分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>干燥无灰基挥发分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>灰分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <th rowspan="4">5</th>
+            <th rowspan="4">其他燃料机组</th>
+            <td>低位发热量</td>
+            <td>MJ/Kg</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>硫分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>干燥无灰基挥发分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        <tr>
+            <td>灰分</td>
+            <td>%</td>
+            <td><input class="ivu-input" type="text" name="emitValue" placeholder="请输入..."></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="button bottom-button">
+        <button type="button" class="ivu-btn ivu-btn-ghost"><span>返回</span></button>
+        <button type="button" class="ivu-btn ivu-btn-ghost" id="preserve"><span>保存</span></button>
+        <button type="button" class="ivu-btn ivu-btn-primary"><span>下一步</span></button>
+    </div>
+</div>
+<div id="divbox"><img src="../../img/save.png" class="save" style="display: none;"></div>
+</body>
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none"; 
+}
+setTimeout("codefans()",3000);
+</script>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</html>

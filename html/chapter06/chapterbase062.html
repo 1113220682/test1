@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/tools.css">
+    <link rel="stylesheet" href="./../../css/global.css">
+</head>
+<body>
+<div class="tableShow">
+    <div class="contentTitle">
+        排污许可执行报表 > 超标排放信息
+    </div>
+    <div class="main-wrap">
+        <div class="main-dt">
+            有组织废气污染物超标时段小时均值报表
+
+        </div>
+        <div class="main-dd">
+            <table class="table-list">
+                <tbody>
+                <tr>
+                    <th width="300">超标时段</th>
+                    <th>排放口编号</th>
+                    <th>超标污染物种类</th>
+                    <th>排放浓度（折标，mg/m3）</th>
+                    <th>超标原因说明</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <!-- <td colspan="6">暂无数据</td> -->
+                    <td><input class="ivu-input" type="text" name="emitValue"></td>
+                    <td><input class="ivu-input" type="text" name="emitValue"></td>
+                    <td><input class="ivu-input" type="text" name="emitValue"></td>
+                    <td><input class="ivu-input" type="text" name="emitValue"></td>
+                    <td><input class="ivu-input" type="text" name="emitValue"></td>
+                    <td><input class="ivu-input" type="text" name="emitValue"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="main-dt">
+            废水污染物超标时段日均值报表
+
+        </div>
+        <div class="main-dd">
+            <table class="table-list">
+                <tbody>
+                <tr>
+                    <th width="180">日期</th>
+                    <th>排放口编号</th>
+                    <th>超标污染物种类</th>
+                    <th>排放浓度（折标，mg/m3）</th>
+                    <th>超标原因说明</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td colspan="6">暂无数据</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div class="button bottom-button">
+        <button type="button" class="ivu-btn ivu-btn-ghost"> <span>上一步</span></button>
+        <button type="button" class="ivu-btn ivu-btn-ghost" id="preserve"><span>保存</span></button>
+        <button type="button" class="ivu-btn ivu-btn-primary"> <span>下一步</span></button>
+    </div>
+</div>
+<div id="divbox"><img src="../../img/save.png" class="save" style="display: none;"></div>
+</body>
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none"; 
+}
+setTimeout("codefans()",3000);
+</script>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</html>

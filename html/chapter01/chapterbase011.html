@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/tools.css">
+    <link rel="stylesheet" href="./../../css/global.css">
+</head>
+<body>
+
+<div class="tableShow">
+    <div class="contentTitle">
+        排污许可执行报表 > 基本生产信息
+    </div>
+  <div class="main-wrap">
+    <h3>企业基本信息表</h3>
+    <h4>注1：燃料运行周期相关参数根据主要燃料品种分别填写对应内容。燃料消耗量均为入炉值。</h4>
+    <table class="table-list">
+        <tbody>
+        <tr>
+            <th colspan="15">生产情况</th> 
+        </tr>
+        <tr>
+            <th rowspan="3" colspan="2">机组名称</th> 
+            <th colspan="13">填报周期内燃料相关参数</th> 
+        </tr>
+        <tr> 
+            <th colspan="5">燃煤机组</th> 
+            <th colspan="2">燃油机组</th>
+            <th colspan="2">燃气机组</th>
+            <th colspan="2">煤矸石机组</th>
+            <th colspan="2">其他燃料机组</th>
+        </tr>
+        <tr>
+           <th>燃煤量（万吨)</th> 
+           <th>发电标准煤耗（g标煤/kWh）</th>
+           <th>产灰量（吨）</th>
+           <th>产灰量（吨</th>
+           <th>产渣量（吨）</th>
+           <th>产渣量（万吨）</th>
+           <th>发电油耗（g/kWh)</th>
+           <th>燃气量（万m3)</th>
+           <th>发电气耗（标m3/kWh）</th>
+           <th>煤矸石消耗量（万吨））</th>
+           <th>发电标准煤耗（g标煤/kWh）</th>
+           <th>其他燃料消耗量（吨）</th>
+           <th>发电标准煤耗（g标煤/kWh）</th>            
+        </tr>
+        <tr> 
+           <th colspan="2">1号机组</th>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+        </tr>
+        <tr> 
+           <th colspan="2">2号机组</th>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+        </tr>
+        <tr> 
+           <th colspan="2">全厂合计</th>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+           <td><input class="ivu-input" placeholder="请输入..."></input></td>
+        </tr>
+        
+
+    </table>
+    <table class="table-list">
+       
+    </table>
+    <div class="button bottom-button">
+        <!-- <button type="button" class="ivu-btn ivu-btn-ghost"> <span>查看许可要求</span></button> -->
+        <button type="button" class="ivu-btn ivu-btn-ghost " id="preserve"><span>保存</span></button>
+        <button type="button" class="ivu-btn ivu-btn-primary"> <span>下一步</span></button>
+    </div>
+
+</div>
+<div id="divbox"><img src="../../img/save.png" class="save" style="display: none;"></div>
+</body>
+<script language="javascript">
+function codefans(){
+var box=document.getElementById("divbox");
+box.style.display="none"; 
+}
+setTimeout("codefans()",3000);
+</script>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</html>
